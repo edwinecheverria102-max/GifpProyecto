@@ -18,7 +18,7 @@ export const GiftApp = () => {
             {/*Buscador */}
             <Buscador
                 boton='buscar'
-                buscador='buscar gift'
+                buscador='buscar gif'
                 manejobuscar={manejobuscar}
             />
 

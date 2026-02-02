@@ -17,6 +17,7 @@ export const useGifts = () => {
 
         const gift = await getgiftbyquery(term)
         setgifts(gift)
+        giftCache.current[term] = gift
     }
 
     const manejobuscar = async (query: string) => {

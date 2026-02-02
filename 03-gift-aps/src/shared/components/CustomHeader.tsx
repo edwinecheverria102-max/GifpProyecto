@@ -2,7 +2,7 @@
 
 interface props {
     titulo: string,
-    descripcion: string
+    descripcion?: string
 }
 
 export const CustomHeader = ({ titulo, descripcion }: props) => {
