@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">
+    <title>Lista de pendientes</title>
+    <style>
+        body {
+            background-color: #f8d394ff;
+            padding-top: 60px;
+        }
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #DEE4FF;
+            -webkit-box-shadow: 4px 4px 26px -8px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            overflow: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+
+        }
+
+        a,
+        p{
+            <!-- colores a los links -->
+        }
+
+        .barra-superior{
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #4D9FE3, #2482cf 43%, #2482cfff 100%);
+        }
+
+        .barra_superior a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .envoltorio-tareas{
+            display: flex;
+            aling-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid rgba(0, 0, 0, 1)
+        }
+
+        .titulo-tarea {
+            display: flex;
+        }
+
+        .titulo-tarea {
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+
+        .icono-tarea-completa {
+            height: 20px;
+            width: 20px;
+            background-color: rgba(43, 251, 43, 1);
+            border-radius: 50px;
+        }
+
+        .icono-tarea-incompleta {
+            height: 20px;
+            width: 20px;
+            background-color: rgba(218, 218, 218, 1);
+            border-radius: 50px;
+        }
+
+        .enlace-eliminar {
+            text-decoration: none;
+            font-weight: 900;
+            color: #ef4320ff
+            line-height: 0;
+        }
+
+        #envoltorio-agregar-buscar {
+            display: flex;
+            justify-content: space-between;
+            aling-items: center;
+            padding: 10px;
+        }
+
+        #enlace-agregar {
+            color: #ef4320ff
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: 1px 1px #81413B
+        }
+
+        input[type=text],
+        input[type=passwoed],
+        textarea {
+            border: 1px solid #EB796f
+            border_radius: 5px;
+            padding: 10px;
+            width: 90%
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .boton {
+            border: 1px solid #EB796f;
+            background-color: #FAFAFA;
+            color: #EB796f;
+            padding: 10px;
+            font-size: 14px;
+            border-radius; 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cuerpo-targeta {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
